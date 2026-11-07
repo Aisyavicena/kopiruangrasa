@@ -186,7 +186,7 @@ function kirimWA() {
     return;
   }
 
-  var pesan = "Hi Kopi Ruang Rasa! Aku" + nama + " mau pesan ini:\n";
+  var pesan = "Hi Kopi Ruang Rasa! Aku " + nama + " mau pesan ini:\n";
   var total = 0;
   for (var i = 0; i < keranjang.length; i++) {
     var k = keranjang[i];
