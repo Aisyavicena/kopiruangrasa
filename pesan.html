@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan - Kopi Ruang Rasa</title>
+  <link rel="icon" href="Images/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="atas">
+      <img src="Images/apple-touch-icon.png" alt="Logo Kopi Ruang Rasa">
+      <div>
+        <h1>Kopi Ruang Rasa</h1>
+        <p>Tulis slogan tokomu di sini</p>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="pita">
+        <img src="Images/hd1.jpg" alt="Kopi 1">
+        <img src="Images/hd2.jpg" alt="Kopi 2">
+        <img src="Images/hd3.jpeg" alt="Kopi 3">
+        <img src="Images/hd1.jpg" alt="Kopi 1">
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGASI -->
+  <nav>
+    <button class="tombol-menu" onclick="bukaMenu()">&#9776; Menu</button>
+
+    <div id="menu" class="daftar-menu">
+      <a href="index.html">Home</a>
+
+      <div class="dropdown">
+        <a href="profil.html">Profil &#9662;</a>
+        <div class="isi-dropdown">
+          <a href="profil.html#sejarah">Awal Mula</a>
+        </div>
+      </div>
+
+      <a href="menu.html">Galeri</a>
+      <a href="pesan.html">Pesan</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- ISI HALAMAN -->
+  <div class="isi">
+
+    <main>
+      <h1 class="judul-menu">PESAN</h1>
+      <p class="petunjuk">Semua pesanan menggunakan sistem Pre-Order. Kopi dibuat per batch agar kesegarannya terjaga, jadi silakan pesan terlebih dahulu ya</p>
+
+      <div class="daftar-item">
+
+        <h2 class="seri">Seri Ruang Hening <small>(Black &amp; Refreshing Series)</small></h2>
+
+        <div class="item" onclick="pilihMenu(this, 10000, 50000)">
+          <div class="info">
+            <h3>Hitam Bersahaja</h3>
+            <p class="deskripsi">Americano. Espresso murni yang diseduh dengan air, menampilkan karakter asli biji kopi pilihan.</p>
+            <p class="harga-ukuran">200 ml Rp10.000 &middot; 1 liter Rp50.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/amer.jpeg" alt="Hitam Bersahaja">
+        </div>
+
+        <div class="item" onclick="pilihMenu(this, 12000, 60000)">
+          <div class="info">
+            <h3>Lengkara Biru</h3>
+            <p class="deskripsi">Blueberry Americano. Perpaduan asam-manis segar dari buah blueberry dan ketegasan espresso dingin.</p>
+            <p class="harga-ukuran">200 ml Rp12.000 &middot; 1 liter Rp60.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/amerb.jpeg" alt="Lengkara Biru">
+        </div>
+
+        <h2 class="seri">Seri Rasa Hangat <small>(Latte Series)</small></h2>
+
+        <div class="item" onclick="pilihMenu(this, 14000, 70000)">
+          <div class="info">
+            <h3>Rasa Murni</h3>
+            <p class="deskripsi">Coffee Latte. Klasik dan seimbang. Ekspresi murni dari paduan espresso dan susu steam.</p>
+            <p class="harga-ukuran">200 ml Rp14.000 &middot; 1 liter Rp70.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/kopi.jpeg" alt="Rasa Murni">
+        </div>
+
+        <div class="item" onclick="pilihMenu(this, 14000, 70000)">
+          <div class="info">
+            <h3>Rasa Kenangan</h3>
+            <p class="deskripsi">Kopi Susu Aren. Espresso, susu segar, dan manisnya gula aren lokal yang hangat dan familiar.</p>
+            <p class="harga-ukuran">200 ml Rp14.000 &middot; 1 liter Rp70.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/gulaar.jpeg" alt="Rasa Kenangan">
+        </div>
+
+        <div class="item" onclick="pilihMenu(this, 14000, 70000)">
+          <div class="info">
+            <h3>Kilas Manis</h3>
+            <p class="deskripsi">Vanilla Latte. Perpaduan lembut espresso dan keharuman vanilla yang menenangkan.</p>
+            <p class="harga-ukuran">200 ml Rp14.000 &middot; 1 liter Rp70.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/vanilla.jpeg" alt="Kilas Manis">
+        </div>
+
+        <div class="item" onclick="pilihMenu(this, 14000, 70000)">
+          <div class="info">
+            <h3>Jejak Hijau</h3>
+            <p class="deskripsi">Pandan Latte. Harmoni unik antara aroma pandan otentik, susu, dan ketegasan kopi.</p>
+            <p class="harga-ukuran">200 ml Rp14.000 &middot; 1 liter Rp70.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/pandan.jpeg" alt="Jejak Hijau">
+        </div>
+
+        <div class="item" onclick="pilihMenu(this, 14000, 70000)">
+          <div class="info">
+            <h3>Teman Tumbuh</h3>
+            <p class="deskripsi">Almond Latte. Kopi susu dengan gurih khas kedelai almond yang kaya rasa dan lezat.</p>
+            <p class="harga-ukuran">200 ml Rp14.000 &middot; 1 liter Rp70.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/almond.jpeg" alt="Teman Tumbuh">
+        </div>
+
+        <div class="item" onclick="pilihMenu(this, 14000, 70000)">
+          <div class="info">
+            <h3>Impian Karamel</h3>
+            <p class="deskripsi">Butterscotch Latte. Sensasi gurih mentega dan manisnya karamel cair yang mewah di setiap tegukan.</p>
+            <p class="harga-ukuran">200 ml Rp14.000 &middot; 1 liter Rp70.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/karamel.jpeg" alt="Impian Karamel">
+        </div>
+
+        <div class="item" onclick="pilihMenu(this, 14000, 70000)">
+          <div class="info">
+            <h3>Nyiur Teduh</h3>
+            <p class="deskripsi">Coconut Latte. Perpaduan presisi antara espresso, lembutnya fresh milk coconut yang gurih.</p>
+            <p class="harga-ukuran">200 ml Rp14.000 &middot; 1 liter Rp70.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/kelapa.jpeg" alt="Nyiur Teduh">
+        </div>
+
+        <div class="item" onclick="pilihMenu(this, 14000, 70000)">
+          <div class="info">
+            <h3>Merona Rasa</h3>
+            <p class="deskripsi">Rose Latte. Kombinasi elegan espresso lembut dan fresh milk yang disempurnakan dengan aroma sirup mawar.</p>
+            <p class="harga-ukuran">200 ml Rp14.000 &middot; 1 liter Rp70.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/rose.jpeg" alt="Merona Rasa">
+        </div>
+
+        <div class="item" onclick="pilihMenu(this, 14000, 70000)">
+          <div class="info">
+            <h3>Kencana Manis</h3>
+            <p class="deskripsi">Banana Latte. Espresso berkualitas yang berpadu sempurna dengan gurihnya fresh milk dan manis lembutnya rasa pisang.</p>
+            <p class="harga-ukuran">200 ml Rp14.000 &middot; 1 liter Rp70.000</p>
+            <button class="tombol-pilih">Pilih</button>
+          </div>
+          <img src="Images/pisang.jpeg" alt="Kencana Manis">
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- POPUP PILIHAN MENU -->
+  <div id="popup-pesan" class="popup">
+    <div class="kotak-popup">
+      <span class="tutup" onclick="tutupPesan()">&times;</span>
+      <img id="p-gambar" src="" alt="">
+      <h2 id="p-nama"></h2>
+      <p id="p-deskripsi"></p>
+
+      <div class="pilihan">
+        <h4>Pilih ukuran</h4>
+        <label>
+          <input type="radio" name="ukuran" id="ukuran-200" checked onchange="hitungHarga()">
+          200 ml - <span id="p-h200"></span>
+        </label>
+        <label>
+          <input type="radio" name="ukuran" id="ukuran-1l" onchange="hitungHarga()">
+          1 liter - <span id="p-h1l"></span>
+        </label>
+
+        <h4>Custom (boleh dikosongkan)</h4>
+        <label>
+          <input type="checkbox" id="extra-shot" onchange="hitungHarga()">
+          Extra Shot Espresso (+Rp2.000)
+        </label>
+        <p class="catatan">Tambahan satu shot espresso supaya rasa kopinya lebih kuat.</p>
+
+        <label>
+          <input type="checkbox" id="oat-milk" onchange="hitungHarga()">
+          Oat Milk (+Rp5.000)
+        </label>
+        <p class="catatan">Susu oat sebagai pengganti susu biasa, rasanya lebih ringan.</p>
+
+        <h4>Jumlah</h4>
+        <input type="number" id="p-jumlah" value="1" min="1" oninput="hitungHarga()">
+      </div>
+
+      <p class="harga" id="p-total"></p>
+      <button class="tombol" onclick="tambahDariPopup()">Tambah ke Keranjang</button>
+    </div>
+  </div>
+
+  <!-- IKON KERANJANG (melayang) -->
+  <div class="keranjang-ikon" onclick="bukaKeranjang()">
+    &#128722;
+    <span id="jumlah-keranjang" class="lencana">0</span>
+  </div>
+
+  <!-- BAR TOTAL (di bawah) -->
+  <div id="bar-total" class="bar-total" onclick="bukaKeranjang()">
+    <div class="bar-kiri">
+      <b id="bar-jumlah">0 item</b>
+      <span id="bar-menu"></span>
+    </div>
+    <b id="bar-harga">Rp0</b>
+  </div>
+
+  <!-- ISI KERANJANG -->
+  <div id="panel-keranjang" class="panel-keranjang">
+    <span class="tutup" onclick="tutupKeranjang()">&times;</span>
+    <h3>Keranjang Kamu</h3>
+    <ul id="daftar"></ul>
+    <p class="harga" id="total">Total: Rp0</p>
+
+    <label for="nama-pemesan">Nama pemesan</label><br>
+    <input type="text" id="nama-pemesan" placeholder="Tulis namamu">
+
+    <button class="tombol" onclick="kirimWA()">Pesan via WhatsApp</button><br>
+    <button class="tombol-kosong" onclick="kosongkan()">Kosongkan</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

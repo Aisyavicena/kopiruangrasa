@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - Kopi Ruang Rasa</title>
+  <link rel="icon" href="Images/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="atas">
+      <img src="Images/apple-touch-icon.png" alt="Logo Kopi Ruang Rasa">
+      <div>
+        <h1>Kopi Ruang Rasa</h1>
+        <p>Tempat rasa menemukan ruangnya</p>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="pita">
+        <img src="Images/hd1.jpg" alt="Kopi 1">
+        <img src="Images/hd2.jpg" alt="Kopi 2">
+        <img src="Images/hd3.jpeg" alt="Kopi 3">
+        <img src="Images/hd1.jpg" alt="Kopi 1">
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGASI -->
+  <nav>
+    <button class="tombol-menu" onclick="bukaMenu()">&#9776; Menu</button>
+
+    <div id="menu" class="daftar-menu">
+      <a href="index.html">Home</a>
+
+      <div class="dropdown">
+        <a href="profil.html">Profil &#9662;</a>
+        <div class="isi-dropdown">
+          <a href="profil.html#awal-mula">Awal Mula</a>
+        </div>
+      </div>
+
+      <a href="menu.html">Galeri</a>
+      <a href="pesan.html">Pesan</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+  </nav>
+
+
+  <!-- ISI HALAMAN -->
+  <div class="isi">
+
+    <main>
+      <h1 class="judul-menu">GALERI</h1>
+      <p class="petunjuk">Klik foto untuk melihat detailnya.</p>
+
+      <div class="baris">
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/amer.jpeg" alt="Hitam Bersahaja">
+          <h3>Hitam Bersahaja</h3>
+          <p class="harga">Mulai Rp10.000</p>
+          <p class="deskripsi sembunyi">Americano. Espresso murni yang diseduh dengan air, menampilkan karakter asli biji kopi pilihan.</p>
+        </div>
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/amerb.jpeg" alt="Lengkara Biru">
+          <h3>Lengkara Biru</h3>
+          <p class="harga">Mulai Rp12.000</p>
+          <p class="deskripsi sembunyi">Blueberry Americano. Perpaduan asam-manis segar dari buah blueberry dan ketegasan espresso dingin.</p>
+        </div>
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/kopi.jpeg" alt="Rasa Murni">
+          <h3>Rasa Murni</h3>
+          <p class="harga">Mulai Rp14.000</p>
+          <p class="deskripsi sembunyi">Coffee Latte. Klasik dan seimbang. Ekspresi murni dari paduan espresso dan susu steam.</p>
+        </div>
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/gulaar.jpeg" alt="Rasa Kenangan">
+          <h3>Rasa Kenangan</h3>
+          <p class="harga">Mulai Rp14.000</p>
+          <p class="deskripsi sembunyi">Kopi Susu Aren. Espresso, susu segar, dan manisnya gula aren lokal yang hangat dan familiar.</p>
+        </div>
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/vanilla.jpeg" alt="Kilas Manis">
+          <h3>Kilas Manis</h3>
+          <p class="harga">Mulai Rp14.000</p>
+          <p class="deskripsi sembunyi">Vanilla Latte. Perpaduan lembut espresso dan keharuman vanilla yang menenangkan.</p>
+        </div>
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/pandan.jpeg" alt="Jejak Hijau">
+          <h3>Jejak Hijau</h3>
+          <p class="harga">Mulai Rp14.000</p>
+          <p class="deskripsi sembunyi">Pandan Latte. Harmoni unik antara aroma pandan otentik, susu, dan ketegasan kopi.</p>
+        </div>
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/almond.jpeg" alt="Teman Tumbuh">
+          <h3>Teman Tumbuh</h3>
+          <p class="harga">Mulai Rp14.000</p>
+          <p class="deskripsi sembunyi">Almond Latte. Kopi susu dengan gurih khas kedelai almond yang kaya rasa dan lezat.</p>
+        </div>
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/karamel.jpeg" alt="Impian Karamel">
+          <h3>Impian Karamel</h3>
+          <p class="harga">Mulai Rp14.000</p>
+          <p class="deskripsi sembunyi">Butterscotch Latte. Sensasi gurih mentega dan manisnya karamel cair yang mewah di setiap tegukan.</p>
+        </div>
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/kelapa.jpeg" alt="Nyiur Teduh">
+          <h3>Nyiur Teduh</h3>
+          <p class="harga">Mulai Rp14.000</p>
+          <p class="deskripsi sembunyi">Coconut Latte. Perpaduan presisi antara espresso, lembutnya fresh milk coconut yang gurih.</p>
+        </div>
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/rose.jpeg" alt="Merona Rasa">
+          <h3>Merona Rasa</h3>
+          <p class="harga">Mulai Rp14.000</p>
+          <p class="deskripsi sembunyi">Rose Latte. Kombinasi elegan espresso lembut dan fresh milk yang disempurnakan dengan aroma sirup mawar.</p>
+        </div>
+
+        <div class="kartu" onclick="lihatDetail(this)">
+          <img src="Images/pisang.jpeg" alt="Kencana Manis">
+          <h3>Kencana Manis</h3>
+          <p class="harga">Mulai Rp14.000</p>
+          <p class="deskripsi sembunyi">Banana Latte. Espresso berkualitas yang berpadu sempurna dengan gurihnya fresh milk dan manis lembutnya rasa pisang.</p>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Kopi Ruang Rasa. Desain oleh Avicena.</p>
+    <p>Kp. Ciapus, Kec. Balaraja, Kab. Tangerang, Banten</p>
+    <p>Instagram: <a href="https://www.instagram.com/coffee.ruangrasa/" target="_blank">@coffee.ruangrasa</a></p>
+    <p>Website: <a href="https://aisyavicena.github.io/kopiruangrasa/">aisyavicena.github.io/kopiruangrasa</a></p>
+  </footer>
+
+  <!-- POPUP DETAIL -->
+  <div id="popup" class="popup">
+    <div class="kotak-popup">
+      <span class="tutup" onclick="tutupDetail()">&times;</span>
+      <img id="detail-gambar" src="" alt="">
+      <h2 id="detail-nama"></h2>
+      <p id="detail-deskripsi"></p>
+      <a class="tombol" href="pesan.html">Beli</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

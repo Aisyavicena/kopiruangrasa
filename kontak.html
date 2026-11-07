@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Kopi Ruang Rasa</title>
+  <link rel="icon" href="Images/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="atas">
+      <img src="Images/apple-touch-icon.png" alt="Logo Kopi Ruang Rasa">
+      <div>
+        <h1>Kopi Ruang Rasa</h1>
+        <p>Tempat rasa menemukan ruangnya</p>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="pita">
+        <img src="Images/hd1.jpg" alt="Kopi 1">
+        <img src="Images/hd2.jpg" alt="Kopi 2">
+        <img src="Images/hd3.jpeg" alt="Kopi 3">
+        <img src="Images/hd1.jpg" alt="Kopi 1">
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGASI -->
+  <nav>
+    <button class="tombol-menu" onclick="bukaMenu()">&#9776; Menu</button>
+
+    <div id="menu" class="daftar-menu">
+      <a href="index.html">Home</a>
+
+      <div class="dropdown">
+        <a href="profil.html">Profil &#9662;</a>
+        <div class="isi-dropdown">
+          <a href="profil.html#awal-mula">Awal Mula</a>
+        </div>
+      </div>
+
+      <a href="menu.html">Galeri</a>
+      <a href="pesan.html">Pesan</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+  </nav>
+
+
+  <!-- ISI HALAMAN -->
+  <div class="isi">
+
+    <main>
+      <h1 class="judul-menu">KONTAK</h1>
+
+      <div class="bagian kontak-info">
+        <h2>Hubungi Kami</h2>
+        <p>WhatsApp: <a href="https://wa.me/628988247901" target="_blank">+62 898-8247-901</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/coffee.ruangrasa/" target="_blank">@coffee.ruangrasa</a></p>
+        <p>Alamat: Kp. Ciapus, Kec. Balaraja, Kab. Tangerang, Banten</p>
+      </div>
+
+      <div class="bagian">
+        <h2>Kirim Pesan</h2>
+        <p>Isi formulir di bawah, lalu klik tombol. WhatsApp akan terbuka dengan pesanmu sudah tertulis.</p>
+
+        <form class="formulir" onsubmit="kirimKontak(); return false;">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" placeholder="Tulis namamu">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Tulis emailmu">
+
+          <label for="institusi">Institusi</label>
+          <input type="text" id="institusi" placeholder="Asal sekolah, kampus, atau kantor">
+
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" placeholder="Tulis pesanmu di sini"></textarea>
+
+          <button class="tombol" type="submit">Kirim via WhatsApp</button>
+        </form>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Kopi Ruang Rasa. Desain oleh Avicena.</p>
+    <p>Kp. Ciapus, Kec. Balaraja, Kab. Tangerang, Banten</p>
+    <p>Instagram: <a href="https://www.instagram.com/coffee.ruangrasa/" target="_blank">@coffee.ruangrasa</a></p>
+    <p>Website: <a href="https://aisyavicena.github.io/kopiruangrasa/">aisyavicena.github.io/kopiruangrasa</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
